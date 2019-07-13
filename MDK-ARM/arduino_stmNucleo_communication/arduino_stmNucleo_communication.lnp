@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"arduino_stmnucleo_communication\startup_stm32f410rx.o"
+"arduino_stmnucleo_communication\main.o"
+"arduino_stmnucleo_communication\stm32f4xx_it.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_msp.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_tim.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_tim_ex.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_uart.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_rcc.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_rcc_ex.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_flash.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_flash_ex.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_flash_ramfunc.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_gpio.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_dma_ex.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_dma.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_pwr.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_pwr_ex.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal_cortex.o"
+"arduino_stmnucleo_communication\stm32f4xx_hal.o"
+"arduino_stmnucleo_communication\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "arduino_stmNucleo_communication\arduino_stmNucleo_communication.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "arduino_stmNucleo_communication.map" -o arduino_stmNucleo_communication\arduino_stmNucleo_communication.axf
